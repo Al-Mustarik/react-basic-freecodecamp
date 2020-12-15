@@ -19,10 +19,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// function Greeting(){
+//   return (
+//     <React.Fragment>
+//       <div>
+//         <h3>hello people</h3>
+//         <ul>
+//           <li>
+//             <a href="http://"> hello world </a>
+//           </li>
+//           <img src="" alt=""/>
+//           <input type="text" name="" id=""/>
+//         </ul>
+//       </div>
+//       <div></div>
+//     </React.Fragment>
+//   );
+// }
+
+// const Greeting = () => {
+//   return React.createElement(
+//     'div', 
+//     {}, 
+//     React.createElement('h1', {}, 'hello world')
+//     );
+// }
+
+
+// Nested Components, React Tools
+
 function Greeting(){
-  return <h1>this is nahid and this is my first component</h1>;
+  return(
+    <div>
+      <Person />
+      <Message />
+    </div>
+  );
 }
 
+const Person = () => <h2> jhon doe</h2>;
+const Message = () => {
+  return <p> this is my message</p>;
+};
 
 // < /> ==> self closing tag
 ReactDOM.render(<Greeting />, document.getElementById('root'));
