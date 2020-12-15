@@ -1,56 +1,15 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
-// // If you want to start measuring performance in your app, pass a function
-// // to log results (for example: reportWebVitals(console.log))
-// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// function Greeting(){
-//   return (
-//     <React.Fragment>
-//       <div>
-//         <h3>hello people</h3>
-//         <ul>
-//           <li>
-//             <a href="http://"> hello world </a>
-//           </li>
-//           <img src="" alt=""/>
-//           <input type="text" name="" id=""/>
-//         </ul>
-//       </div>
-//       <div></div>
-//     </React.Fragment>
-//   );
-// }
-
-// const Greeting = () => {
-//   return React.createElement(
-//     'div', 
-//     {}, 
-//     React.createElement('h1', {}, 'hello world')
-//     );
-// }
-
-
-// Nested Components, React Tools
+// CSS
+import './index.css';
 
 function BookList(){
   return(
-    <section>
+    <section className = "bookList">
+      <Book />
+      <Book />
+      <Book />
       <Book />
       <Book />
       <Book />
@@ -61,7 +20,7 @@ function BookList(){
 
 const Book = () => {
   return (
-    <article>
+    <article className = "book">
       <Image />
       <Title />
       <Author />
